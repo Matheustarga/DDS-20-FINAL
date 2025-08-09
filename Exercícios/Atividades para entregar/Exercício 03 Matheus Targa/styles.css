@@ -1,0 +1,33 @@
+
+header{
+    background-color: darkgrey;
+    width: 2000px;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+}
+footer{
+    background-color: rgb(133, 131, 131);
+    color: #ffffff;
+    display: flex;
+    width: 2000px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Div_principal{
+    background-color: red;
+    display: flex;
+    width: 2000px;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.Div_secundaria{
+    background-color: green;
+    width: 500px;
+    margin: 30px;
+    text-align: center;
+    
+}
