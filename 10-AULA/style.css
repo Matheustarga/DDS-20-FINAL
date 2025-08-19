@@ -1,0 +1,111 @@
+body{
+    background-color: violet;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    /* font-weight: bold; */
+}
+#bloco{
+    background-color: black;
+}
+#linha-bloco{
+    background-color: aqua;   
+}
+
+#linha{
+    background-color: beige;
+    
+}
+
+.quad{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    /* display: inline-block; */
+    /* display: inline; */
+    
+}
+
+#quad1{
+    background-color: red;
+}
+#quad2{
+    background-color: yellow;
+}
+#quad3{
+    background-color: green;
+}
+
+#grid{
+    min-height: 100%;
+    min-width: 100%;
+    background-color: blue;
+    height: 900px;
+    display: grid;
+    /* grid-template-rows: 200px 500px 100px ;
+    grid-template-columns: 30% 65%; */
+    grid-template:1fr 1fr / 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    justify-items: center; /*Start center end*/
+    align-items: right;/*left center right*/    
+}
+
+/*GRID 2*/
+.item{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#grid2{
+    display: grid;
+    background-color: burlywood;
+    grid-template-rows: 200px 500px 100px;
+    grid-template-columns: 30% 65%;
+    grid-template-areas: "cabecalho cabecalho cabecalho"
+                         "lateral principal principal"
+                         "rodape rodape rodape"
+    ;
+    grid-gap: 10px;
+}
+#cabecalho{
+    grid-area: cabecalho;
+    background-color: red;
+}
+#lateral{
+    grid-area: lateral;
+    background-color: greenyellow;
+}
+#principal{
+    grid-area: principal;
+    background-color: blue;
+}
+#rodape{
+    grid-area: rodape;
+    background-color: rgb(231, 59, 231);
+}
+
+#flex{
+    background-color: black;
+    height: 700px;
+    min-width: 100%;
+    gap: 10px;
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: column-reverse; */
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; 
+    /* align-content: center; */
+
+
+
+}
+
+#quad1{
+    flex-shrink: 0;
+}
+.quad2{
+    flex-grow: 1;
+}
