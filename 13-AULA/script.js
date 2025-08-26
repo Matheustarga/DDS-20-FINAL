@@ -148,3 +148,38 @@ function calculo(n1,n2) {
 }
 console.log(calculo(5,5));
 
+console.log("ATIVIDADE");
+
+var idade1 = prompt("Idade 1: ")
+var idade2 = prompt("Idade 2: ")
+
+var valorFinal = 0;
+
+if(idade1 < 18){
+    valorFinal = valorFinal + 15;
+}
+else if (idade1 < 60){
+    valorFinal = valorFinal + 30;
+}
+else{
+    valorFinal = valorFinal + 15;
+}
+
+if(idade2 < 18){
+    valorFinal = valorFinal + 15;
+}
+else if (idade2 < 60){
+    valorFinal = valorFinal + 30;
+}
+else{
+    valorFinal = valorFinal + 15;
+}
+
+console.log(valorFinal);
+
+var idades = []
+
+function ingressos(idades=[]) {
+    
+}
+
